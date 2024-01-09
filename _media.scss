@@ -1,0 +1,207 @@
+@media screen and (max-width: 769px) and (min-width: 321px) {
+    header {
+        nav {
+            .container-nav {
+                width: $width-section-md;
+                padding: 5%;
+
+                &__links {
+                    width: auto;
+                    gap: 1rem;
+                }
+
+            }
+
+        }
+
+    }
+
+    h1 {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    main {
+        .container-works {
+            width: $width-section-md;
+
+            &__items {
+                &_item {
+                    min-width: 32%;
+                }
+            }
+        }
+
+        .partners {
+
+            &__items {
+                @include column-flex-md;
+
+                &_item {
+                    width: 40%;
+                }
+            }
+        }
+
+        .discover {
+            width: $width-section-md;
+
+            &__items {
+                gap: 1rem;
+            }
+        }
+
+    }
+
+    footer {
+        .container-bottom {
+            width: $width-section-md;
+            
+            &__design {
+                margin-left: 0;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 320px) {
+    
+    header {
+        
+        nav {
+            .container-nav {
+
+                flex-direction: column-reverse;
+                height: 15vh;
+                
+        
+               
+            }
+
+        }
+    }
+    main {
+        section {
+            padding-bottom: 30px;
+        }
+        .container-top {
+            height: 65vh;
+            h1 {
+                font-size: 30px;
+            }
+            p {
+                font-size: 18px;
+                width: 90%;
+                text-align: center;
+            }
+            button {
+                width: 80%;
+            }
+        }
+        h2 {
+            font-size: 22px;
+            
+        }
+        .container-works {
+            
+            width: $width-section-md;
+            &__items {
+                @include column-flex-center;
+                gap: 0.5rem;
+                &_item {
+                    width: 100%;
+                }
+            }
+        }
+        .partners {
+            width: $width-section-md;
+            &__items {
+                @include column-flex-center;
+                &_item {
+                    width: 80%;
+                }
+            }
+            .redborder {
+                width: 80%;
+            }
+        }
+        .discover {
+            width: $width-section-md;
+            h2 {
+                width: 80%;
+            }
+            &__items {
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: 120px 120px 120px 120px 120px 120px 120px;
+                &_item1 {
+                    grid-column: 1/2;
+                    grid-row: 1/2;
+                }
+                &_item2 {
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+                &_item3 {
+                    grid-column: 1/2;
+                    grid-row: 3/4;
+                }
+                &_item4 {
+                    grid-column: 1/2;
+                    grid-row: 4/5;
+                }
+                &_item5 {
+                    grid-column: 1/2;
+                    grid-row: 5/6;
+                }
+                &_item6 {
+                    grid-column: 1/2;
+                    grid-row: 6/7;
+                }
+                &_item7 {
+                    grid-column: 1/2;
+                    grid-row: 7/8;
+                }
+            }
+        }
+        .activity {
+            width: $width-section-md;
+            margin-top: 5%;
+            &__container {
+                @include column-flex-between;
+                button {
+                    width: 80%;
+                }
+            }
+        }
+    }
+    footer {
+        .container-bottom {
+            width: $width-section-md;
+            flex-direction: column;
+            align-items: center;
+            &__company {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                &_links {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 0.2rem 0.75rem;
+                }
+            }
+            &__partners {
+                margin: 2% auto;
+            }
+        }
+    }
+    
+    
+}
